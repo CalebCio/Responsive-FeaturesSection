@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in;
+    font-family: 'Raleway', sans-serif;
+}
+
+#features {
+    background-color: #fafbfc;
+    padding: 5rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.features__top,
+.features__container {
+    padding: 0 1.5rem;
+}
+
+.features__top {
+    text-align: center;
+}
+
+.features__top h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: #071e55;
+}
+
+.features__top p {
+    color: #7c8595;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 5rem;
+    font-weight: 300;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feauture__item {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.feauture__item span {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #1089d4;
+}
+
+.feautureitem__info h4 {
+    font-size: 1.3rem;
+    color: #071e55;
+    margin-bottom: 0.5rem;
+}
+
+.feautureitem__info p {
+    font-size: 1.05rem;
+    color: #7c8595;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .features__top p {
+        padding: 0;
+    }
+    
+    .features__container {
+        grid-template-columns: 1fr;
+    }
+}
